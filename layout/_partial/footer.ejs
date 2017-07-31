@@ -1,5 +1,5 @@
 <!--Footer-->
-<footer class="mdl-mini-footer" id="bottom">
+<footer class="mdl-mini-footer" id="bottom" <% if (theme.footer_background){ %> style="background-image:url(<%=theme.footer_background %>);background-repeat: repeat-x;" <% } %>>
     <% if(theme.scheme === 'Paradox') { %>
         <!-- Paradox Footer Left Section -->
         <%- partial('_partial/footer-left') %>
