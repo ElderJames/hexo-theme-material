@@ -104,6 +104,8 @@ copyright_since:
 #       '<a href="http://www.miitbeian.gov.cn" rel="nofollow">某ICP备xxxxxxxx号-x</a>'
 footer_text:
 
+footer_background: https://repository-hunter.herokuapp.com/contribution/ElderJames.svg
+
 # Qrcode for redirect at other device
 #   use: choose which method to generate the qrcode for each posts.
 #       Available value of "use": plugin | online
@@ -250,6 +252,17 @@ busuanzi:
     all_site_uv: false
     post_pv: false
     busuanzi_pure_mini_js: "https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"
+
+meng:
+    #live2d 
+    ## Plugins: https://github.com/EYHN/hexo-helper-live2d
+    live2d:
+        model: tororo 
+        bottom: 60
+        width: 
+        height: 
+        className: 
+        id: 
 
 # Files Vendors
 # Set a CDN for the files src you want to customize. The url should with protocol.
