@@ -6,10 +6,17 @@
     <%- jsLsload({path:('js/nprogress.js'),key:'np_js'}) %>
 <% } %> -->
 
-<%- jsLsload({path:('js/jquery.pjax.js'),key:'pjax_js'}) %>
+<!-- <%- jsLsload({path:('js/jquery.pjax.js'),key:'pjax_js'}) %>
 
 <script type="text/ls-javascript" id="Pjax-script">
-    $(document).pjax('a', '#main', {fragment: '#main'})
-              .on('pjax:start', function () { NProgress.start() })
-              .on('pjax:end', function () { NProgress.done() });
+    $(document).pjax('a', '.pjax-fragment',{ fragment :'.pjax-fragment'})
+</script> -->
+
+<script src="//cdn.bootcss.com/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
+<script>
+    $(document).pjax('a', '.pjax-fragment', {
+        fragment: '.pjax-fragment',
+        timeout: 5000,
+    }) .on('pjax:start', function () { NProgress.start() })
+       .on('pjax:end', function () { NProgress.done() });;
 </script>
