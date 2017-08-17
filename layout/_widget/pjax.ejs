@@ -1,0 +1,15 @@
+<!-- <% if(theme.vendors.nprogress) { %>
+    <%- jsLsload({path:(theme.vendors.nprogress),key:'np_js'}) %>
+<% } else if(theme.vendors.materialcdn) { %>
+    <%- jsLsload({path:(theme.vendors.materialcdn + '/js/nprogress.js'),key:'np_js'}) %>
+<% } else { %>
+    <%- jsLsload({path:('js/nprogress.js'),key:'np_js'}) %>
+<% } %> -->
+
+<%- jsLsload({path:('js/jquery.pjax.js'),key:'pjax_js'}) %>
+
+<script type="text/ls-javascript" id="Pjax-script">
+    $(document).pjax('a', '#main', {fragment: '#main'})
+              .on('pjax:start', function () { NProgress.start() })
+              .on('pjax:end', function () { NProgress.done() });
+</script>
