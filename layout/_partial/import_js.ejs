@@ -166,7 +166,9 @@
                 },resetTime)
             }
             else{
-                document.title = leaveTitle;
+                setTimeout(function(){
+                    document.title = leaveTitle;
+                },1000);
             }
         }, false);
         //初始化页面状态
